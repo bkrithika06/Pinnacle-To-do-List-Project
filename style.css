@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #e0f7fa, #80deea);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .todo-container {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    width: 95%;
+    max-width: 500px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #006064;
+  }
+  
+  .input-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .input-group input,
+  .input-group select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    flex: 1;
+    min-width: 100px;
+  }
+  
+  .input-group button {
+    padding: 10px 16px;
+    background-color: #00796b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .input-group button:hover {
+    background-color: #004d40;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  li {
+    background: #f1f8e9;
+    border-left: 5px solid #aed581;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    position: relative;
+    transition: background 0.3s;
+  }
+  
+  li.completed {
+    background-color: #e0e0e0;
+    text-decoration: line-through;
+    color: #666;
+  }
+  
+  li span {
+    display: block;
+    font-size: 15px;
+  }
+  
+  li .meta {
+    font-size: 12px;
+    color: #555;
+    margin-top: 4px;
+  }
+  
+  .delete-btn {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #e57373;
+    cursor: pointer;
+  }
+  
+  .delete-btn:hover {
+    color: #c62828;
+  }
+  
+  .clear-btn {
+    background-color: #ff5252;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .clear-btn:hover {
+    background-color: #d32f2f;
+  }
+  
